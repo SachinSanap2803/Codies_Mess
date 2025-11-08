@@ -1,5 +1,4 @@
-
-
+// Home page
 import React, { useState } from "react";
 import AllMenus from "./AllMenus";
 import Banner from "./Banner";
