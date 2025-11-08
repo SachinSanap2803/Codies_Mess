@@ -1,7 +1,3 @@
-// *****************************
-// @author - Attharva Meher  **
-// ****************************
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -11,6 +7,7 @@ import RestaurantImage from "./../../img/restaurant.png";
 
 export const SignupForm = () => {
   const navigate = useNavigate();
+
 
   const isValid = () => {
     let email = formValue.email;

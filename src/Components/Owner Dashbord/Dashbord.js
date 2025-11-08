@@ -1,6 +1,4 @@
-// *****************************
-// @author - Attharva Meher  **
-// ****************************
+
 
 import React, { useState } from "react";
 import UpdateMenuForm from "./UpdateMenuForm";

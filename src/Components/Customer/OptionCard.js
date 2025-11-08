@@ -1,6 +1,3 @@
-// *****************************
-// @author - Attharva Meher  **
-// ****************************
 
 import React from "react";
 import { BsFilterRight } from "react-icons/bs";

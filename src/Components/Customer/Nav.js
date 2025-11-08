@@ -1,6 +1,3 @@
-// *****************************
-// @author - Attharva Meher  **
-// ****************************
 
 import React from "react";
 import { BiLogOut } from "react-icons/bi";

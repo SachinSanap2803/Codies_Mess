@@ -2,7 +2,7 @@
 // @author - Atharva Meher  **
 // ****************************
 
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 export class Login extends Component {
@@ -10,6 +10,7 @@ export class Login extends Component {
   constructor() {
     super();
     this.state = {
+      
       error: false,
       message: null,
     };

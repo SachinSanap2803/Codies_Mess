@@ -1,6 +1,4 @@
-// *****************************
-// @author - Attharva Meher  **
-// ****************************
+
 import React from "react";
 import { MdFastfood } from "react-icons/md";
 import SearchMenu from "./SearchMenu";

@@ -1,6 +1,3 @@
-// *****************************
-// @author - Attharva Meher  **
-// ****************************
 
 import React, { useState } from "react";
 import ReactStars from "react-rating-stars-component";
