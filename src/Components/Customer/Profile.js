@@ -1,6 +1,4 @@
-// *****************************
-// @author - Attharva Meher  **
-// ****************************
+// Profile page
 
 import React from "react";
 import { MdOutlineRestaurant } from "react-icons/md";
