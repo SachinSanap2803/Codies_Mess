@@ -1,7 +1,3 @@
-// *****************************
-// @author - Attharva Meher  **
-// ****************************
-
 import React from "react";
 
 const Food = ({ setFilterCategory }) => {
