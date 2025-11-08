@@ -1,5 +1,5 @@
 import React from "react";
-
+// Food page
 const Food = ({ setFilterCategory }) => {
   const [category, setCategory] = React.useState("");
 
