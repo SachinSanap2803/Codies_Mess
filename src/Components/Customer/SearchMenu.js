@@ -1,4 +1,4 @@
-// Search Pag
+// Search Pa
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
 
