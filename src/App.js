@@ -1,9 +1,5 @@
-// *****************************
-// @author - Attharva Meher  **
-// ****************************
-
+// code readability improvements and formatting
 import "./App.css";
-
 import Home from "./Components/Customer/Home";
 import { LoginForm } from "./Components/Login/LoginForm";
 import { SignupForm } from "./Components/Login/SignupForm";
