@@ -1,8 +1,6 @@
 // Nav bar component
-import React from "react";
+import { useEffect, useState } from "react";
 import { BiLogOut } from "react-icons/bi";
-import { SiCodio } from "react-icons/si";
-import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Nav = () => {
@@ -16,7 +14,7 @@ const Nav = () => {
 
   const loadName = async () => {
     let auth_token = localStorage.getItem("auth_token");
-    await fetch("https://codies-mess.vercel.app/get-customer", {
+    await fetch("http://localhost:5000/get-customer", {
       method: "POST",
 
       headers: {

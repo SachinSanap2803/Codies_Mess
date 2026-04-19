@@ -1,7 +1,6 @@
 
 
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import { useEffect, useState } from "react";
 import Card from "./Card";
 
 const AllMenus = () => {
@@ -9,7 +8,7 @@ const AllMenus = () => {
 
   const loadMenu = async () => {
     try {
-      await fetch("https://codies-mess.vercel.app/all-menu", {
+      await fetch("http://localhost:5000/all-menu", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

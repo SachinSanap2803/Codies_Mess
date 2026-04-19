@@ -1,7 +1,6 @@
 
 
-import React, { useState } from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const UpdateMenuForm = () => {
   const [rerender, setRerender] = useState(false);
@@ -20,7 +19,7 @@ const UpdateMenuForm = () => {
       // eslint-disable-next-line no-restricted-globals
       location.assign("/");
     }
-    await fetch("https://codies-mess.vercel.app/get-menu", {
+    await fetch("http://localhost:5000/get-menu", {
       method: "POST",
 
       headers: {

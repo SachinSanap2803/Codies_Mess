@@ -1,8 +1,4 @@
-// *****************************
-// @author - Atharva Meher  **
-// ****************************
 
-import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
 /*We have made Navbar as function component intentionally to use the useLocation hook from the react-router-dom library,

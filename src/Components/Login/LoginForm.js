@@ -1,13 +1,8 @@
-// *****************************
-// @author - Attharva Meher  **
-// ****************************
 
-import React, { useState } from "react";
-import "./login.css";
-import { Link } from "react-router-dom";
-import { SiCodio } from "react-icons/si";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import RestaurantImage from "./../../img/restaurant.png";
+import "./login.css";
 
 export const LoginForm = () => {
   const navigate = useNavigate();
@@ -55,7 +50,7 @@ export const LoginForm = () => {
         setRerender(!rerender);
       }, 5000);
     } else {
-      await fetch("https://codies-mess.vercel.app/login", {
+      await fetch("http://localhost:5000/login", {
         method: "POST",
 
         headers: {
@@ -64,7 +59,12 @@ export const LoginForm = () => {
 
         body: JSON.stringify(formValue),
       })
-        .then((res) => res.json())
+        // .then((res) => res.json())
+        .then(async (res) => {
+          const text = await res.text();
+          console.log("SERVER RAW RESPONSE:", text);
+          return JSON.parse(text);
+        })
         .then(async (data) => {
           if (!data.error) {
             localStorage.setItem("auth_token", data.auth_token);

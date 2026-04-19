@@ -1,6 +1,3 @@
-// *****************************
-// @author - Atharva Meher  **
-// ****************************
 
 import React, { Component } from "react";
 

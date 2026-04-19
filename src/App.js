@@ -1,11 +1,11 @@
 // code readability improvements and formatting
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./Components/Customer/Home";
+import Profile from "./Components/Customer/Profile";
 import { LoginForm } from "./Components/Login/LoginForm";
 import { SignupForm } from "./Components/Login/SignupForm";
 import Dashbord from "./Components/Owner Dashbord/Dashbord";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Profile from "./Components/Customer/Profile";
 
 function App() {
   return (

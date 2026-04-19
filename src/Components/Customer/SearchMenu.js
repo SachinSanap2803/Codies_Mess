@@ -1,5 +1,5 @@
 // S
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import Card from "./Card";
 
 const SearchMenu = () => {
@@ -12,7 +12,7 @@ const SearchMenu = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    await fetch("https://codies-mess.vercel.app/find-menu", {
+    await fetch("http://localhost:5000/find-menu", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

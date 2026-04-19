@@ -1,8 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { useState } from "react";
-import { SiCodio } from "react-icons/si";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import RestaurantImage from "./../../img/restaurant.png";
 
 export const SignupForm = () => {
@@ -71,7 +68,7 @@ export const SignupForm = () => {
         setRerender(!rerender);
       }, 5000);
     } else {
-      await fetch("https://codies-mess.vercel.app/signup", {
+      await fetch("http://localhost:5000/signup", {
         method: "POST",
 
         headers: {
@@ -80,7 +77,12 @@ export const SignupForm = () => {
 
         body: JSON.stringify(formValue),
       })
-        .then((res) => res.json())
+        // .then((res) => res.json())
+        .then(async (res) => {
+          const text = await res.text();
+          console.log("SERVER RAW RESPONSE:", text);
+          return JSON.parse(text);
+        })
         .then(async (data) => {
           if (!data.error) {
             localStorage.setItem("auth_token", data.auth_token);

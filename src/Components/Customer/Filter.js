@@ -1,15 +1,19 @@
 // Filter page
-import React, { useState, useEffect } from "react";
-import Food from "./Food";
+import { useEffect, useState } from "react";
+// import Menu from "../../Menu";
 import FilterCard from "./FilterCard";
-import Menu from "../../Menu";
+import Food from "./Food";
 
 const Filter = () => {
   const [menuItems, setMenuItems] = useState([]);
   const [filterCategory, setFilterCategory] = useState("");
 
+  // useEffect(() => {
+  //   setMenuItems(Menu);
+  // }, []);
+
   useEffect(() => {
-    setMenuItems(Menu);
+    setMenuItems([]);
   }, []);
 
   return (
@@ -19,29 +23,29 @@ const Filter = () => {
       <div className="row">
         {filterCategory === ""
           ? menuItems.map((item) => {
+            return (
+              <div className="p-1 col-12 col-md-4 col-lg-3">
+                <FilterCard
+                  name={item.name}
+                  type={item.type}
+                  price={item.price}
+                />
+              </div>
+            );
+          })
+          : menuItems
+            .filter((item) => item.type === filterCategory)
+            .map((filteredMenu) => {
               return (
                 <div className="p-1 col-12 col-md-4 col-lg-3">
                   <FilterCard
-                    name={item.name}
-                    type={item.type}
-                    price={item.price}
+                    name={filteredMenu.name}
+                    type={filteredMenu.type}
+                    price={filteredMenu.price}
                   />
                 </div>
               );
-            })
-          : menuItems
-              .filter((item) => item.type === filterCategory)
-              .map((filteredMenu) => {
-                return (
-                  <div className="p-1 col-12 col-md-4 col-lg-3">
-                    <FilterCard
-                      name={filteredMenu.name}
-                      type={filteredMenu.type}
-                      price={filteredMenu.price}
-                    />
-                  </div>
-                );
-              })}
+            })}
       </div>
     </section>
   );

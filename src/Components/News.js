@@ -1,8 +1,5 @@
-// *****************************
-// @author - Atharva Meher  **
-// ****************************
 
-import React, { Component } from "react";
+import { Component } from "react";
 import NetworkError from "./NetworkError";
 import NewsItem from "./NewsItem";
 import Spinner from "./Spinner";

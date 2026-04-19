@@ -1,7 +1,6 @@
 
 
-import React, { useState } from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const UpdateProfileForm = () => {
   const [rerender, setRerender] = useState(false);
@@ -16,7 +15,7 @@ const UpdateProfileForm = () => {
       // eslint-disable-next-line no-restricted-globals
       location.assign("/");
     }
-    await fetch("https://codies-mess.vercel.app/get-owner", {
+    await fetch("http://localhost:5000/get-owner", {
       method: "POST",
 
       headers: {
