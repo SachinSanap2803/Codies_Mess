@@ -48,14 +48,5 @@ React Router implementation creates a seamless, no-reload browsing experience fo
 
 I'm hopeful that this project will make planning your next meal easier and more enjoyable ;-)
 <br/><br/>
-
-## Front End Snaps - 
-<p align="center">
-  <img src="https://github.com/Prathamesh-Patil-GitHub/codies-mess/blob/main/output_Images/output_3.png"> <br/>
-  <img src="https://github.com/Prathamesh-Patil-GitHub/codies-mess/blob/main/output_Images/output_1.png"> <br/>
-  <img src="https://github.com/Prathamesh-Patil-GitHub/codies-mess/blob/main/output_Images/output_2.png"> <br/>
-<img src="https://github.com/Prathamesh-Patil-GitHub/codies-mess/blob/main/output_Images/output_5.png"> <br/>
-  
-</p>
 <hr/>
 "# Codies_Mess" 
