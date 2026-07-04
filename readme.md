@@ -48,5 +48,3 @@ React Router implementation creates a seamless, no-reload browsing experience fo
 
 I'm hopeful that this project will make planning your next meal easier and more enjoyable ;-)
 <br/><br/>
-<hr/>
-"# Codies_Mess" 
